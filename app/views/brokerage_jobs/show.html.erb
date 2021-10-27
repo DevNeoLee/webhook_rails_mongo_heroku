@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Job:</strong>
+  <%= @brokerage_job.job %>
+</p>
+
+<p>
+  <strong>Shipment:</strong>
+  <%= @brokerage_job.shipment %>
+</p>
+
+<%= link_to 'Edit', edit_brokerage_job_path(@brokerage_job) %> |
+<%= link_to 'Back', brokerage_jobs_path %>

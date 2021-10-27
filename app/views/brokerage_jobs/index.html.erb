@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Brokerage Jobs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Job</th>
+      <th>Shipment</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @brokerage_jobs.each do |brokerage_job| %>
+      <tr>
+        <td><%= brokerage_job.job %></td>
+        <td><%= brokerage_job.shipment %></td>
+        <td><%= link_to 'Show', brokerage_job %></td>
+        <td><%= link_to 'Edit', edit_brokerage_job_path(brokerage_job) %></td>
+        <td><%= link_to 'Destroy', brokerage_job, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Brokerage Job', new_brokerage_job_path %>
