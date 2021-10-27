@@ -82,3 +82,7 @@ Current Location of <strong> <%= @brokerage_job.job %> </strong>
     <td><%= @brokerage_job.shipment_locations[-2].BrokerageJob_id %></td>
   </tr>
 </table>
+
+<%= link_to shipment_locations_path, class: '#', :remote => true do %>
+  <i class="icon-trash">Current Location</i>
+<% end %>

@@ -1,0 +1,9 @@
+<p>
+  <strong><%= shipment_location.shipment %>:</strong>
+  <%= shipment_location.message %>
+<br>
+<%= link_to 'Delete', [shipment_location],
+  method: :delete,
+  class: "#",
+  data: { confirm: 'Are you sure?' } %>
+</p>
