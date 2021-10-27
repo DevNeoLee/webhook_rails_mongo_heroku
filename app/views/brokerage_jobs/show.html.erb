@@ -60,3 +60,25 @@
     </div>
   </div>
 </section>
+
+<hr />
+
+Current Location of <strong> <%= @brokerage_job.job %> </strong>
+
+<table>
+  <thead>
+    <tr>
+      <th>Shipment</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>Brokeragejob</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tr>
+    <td><%= @brokerage_job.shipment_locations[-2].shipment %></td>
+    <td><%= @brokerage_job.shipment_locations[-2].latitude %></td>
+    <td><%= @brokerage_job.shipment_locations[-2].longitude %></td>
+    <td><%= @brokerage_job.shipment_locations[-2].BrokerageJob_id %></td>
+  </tr>
+</table>
