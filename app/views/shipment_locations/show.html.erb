@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Shipment:</strong>
+  <%= @shipment_location.shipment %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @shipment_location.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @shipment_location.longitude %>
+</p>
+
+<p>
+  <strong>Brokeragejob:</strong>
+  <%= @shipment_location.BrokerageJob_id %>
+</p>
+
+<%= link_to 'Edit', edit_shipment_location_path(@shipment_location) %> |
+<%= link_to 'Back', shipment_locations_path %>
