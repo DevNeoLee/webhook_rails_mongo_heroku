@@ -5,7 +5,9 @@ development:
       hosts:
         - localhost:27017
       options:
+        server_selection_timeout: 1
   options:
+
 test:
   clients:
     default:
@@ -16,11 +18,3 @@ test:
         read:
           mode: :primary
         max_pool_size: 1
-
-production:
-  clients:
-    default:
-      uri: &lt;%= ENV['MONGODB_URI'] %&gt;
-    options:
-      skip_version_check: true
-    safe: true
