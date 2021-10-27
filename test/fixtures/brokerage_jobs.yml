@@ -3,7 +3,9 @@
 one:
   job: MyString
   shipment: MyString
+  status: MyString
 
 two:
   job: MyString
   shipment: MyString
+  status: MyString

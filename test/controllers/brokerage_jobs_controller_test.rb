@@ -17,7 +17,7 @@ class BrokerageJobsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create brokerage_job" do
     assert_difference('BrokerageJob.count') do
-      post brokerage_jobs_url, params: { brokerage_job: { job: @brokerage_job.job, shipment: @brokerage_job.shipment } }
+      post brokerage_jobs_url, params: { brokerage_job: { job: @brokerage_job.job, shipment: @brokerage_job.shipment, status: @brokerage_job.status } }
     end
 
     assert_redirected_to brokerage_job_url(BrokerageJob.last)
@@ -34,7 +34,7 @@ class BrokerageJobsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update brokerage_job" do
-    patch brokerage_job_url(@brokerage_job), params: { brokerage_job: { job: @brokerage_job.job, shipment: @brokerage_job.shipment } }
+    patch brokerage_job_url(@brokerage_job), params: { brokerage_job: { job: @brokerage_job.job, shipment: @brokerage_job.shipment, status: @brokerage_job.status } }
     assert_redirected_to brokerage_job_url(@brokerage_job)
   end
 

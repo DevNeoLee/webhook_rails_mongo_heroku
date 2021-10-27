@@ -64,6 +64,6 @@ class BrokerageJobsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def brokerage_job_params
-      params.require(:brokerage_job).permit(:job, :shipment)
+      params.require(:brokerage_job).permit(:job, :shipment, :status)
     end
 end

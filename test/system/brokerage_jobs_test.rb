@@ -16,6 +16,7 @@ class BrokerageJobsTest < ApplicationSystemTestCase
 
     fill_in "Job", with: @brokerage_job.job
     fill_in "Shipment", with: @brokerage_job.shipment
+    fill_in "Status", with: @brokerage_job.status
     click_on "Create Brokerage job"
 
     assert_text "Brokerage job was successfully created"
@@ -28,6 +29,7 @@ class BrokerageJobsTest < ApplicationSystemTestCase
 
     fill_in "Job", with: @brokerage_job.job
     fill_in "Shipment", with: @brokerage_job.shipment
+    fill_in "Status", with: @brokerage_job.status
     click_on "Update Brokerage job"
 
     assert_text "Brokerage job was successfully updated"

@@ -10,5 +10,10 @@
   <%= @brokerage_job.shipment %>
 </p>
 
+<p>
+  <strong>Status:</strong>
+  <%= @brokerage_job.status %>
+</p>
+
 <%= link_to 'Edit', edit_brokerage_job_path(@brokerage_job) %> |
 <%= link_to 'Back', brokerage_jobs_path %>

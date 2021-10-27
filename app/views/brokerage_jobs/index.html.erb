@@ -7,6 +7,7 @@
     <tr>
       <th>Job</th>
       <th>Shipment</th>
+      <th>Status</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,6 +17,7 @@
       <tr>
         <td><%= brokerage_job.job %></td>
         <td><%= brokerage_job.shipment %></td>
+        <td><%= brokerage_job.status %></td>
         <td><%= link_to 'Show', brokerage_job %></td>
         <td><%= link_to 'Edit', edit_brokerage_job_path(brokerage_job) %></td>
         <td><%= link_to 'Destroy', brokerage_job, method: :delete, data: { confirm: 'Are you sure?' } %></td>
